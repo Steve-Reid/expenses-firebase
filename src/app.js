@@ -14,6 +14,7 @@ import getVisibleEexpenes from './selectors/expenses';
 import AppRouter from './routers/AppRouter';
 
 moment.locale('en-gb');
+
 const store = configureStore();
 
 const jsx = (
