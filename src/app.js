@@ -16,18 +16,6 @@ import AppRouter from './routers/AppRouter';
 moment.locale('en-gb');
 const store = configureStore();
 
-store.dispatch(addExpense({ description: 'Water bill', amount: 4500 }));
-store.dispatch(addExpense({ description: 'Gas bill', createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 109500 }));
-// store.dispatch(setTextFilter('bill'));
-
-const state = store.getState();
-const visibleExpenses = getVisibleEexpenes(state.expenses, state.filters);
-
-console.log('------------------------------------');
-console.log(visibleExpenses);
-console.log('------------------------------------');
-
 const jsx = (
   <Provider store={store}>
     <AppRouter />
