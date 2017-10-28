@@ -12,6 +12,7 @@ import { addExpense } from './actions/expenses';
 import { setTextFilter } from './actions/filters';
 import getVisibleEexpenes from './selectors/expenses';
 import AppRouter from './routers/AppRouter';
+import './firebase/firebase';
 
 moment.locale('en-gb');
 
