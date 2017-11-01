@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Dashboard correctly 1`] = `
+exports[`should render NotFound correctly 1`] = `
 <div>
   <div>
     Oops! - Sorry, but we could not find the page you are looking for

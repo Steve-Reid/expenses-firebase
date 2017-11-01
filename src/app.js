@@ -13,6 +13,7 @@ import { login, logout } from './actions/auth';
 import getVisibleEexpenes from './selectors/expenses';
 import AppRouter, { history } from './routers/AppRouter';
 import { firebase } from './firebase/firebase';
+import LoadingPage from './components/LoadingPage';
 
 moment.locale('en-gb');
 
@@ -30,7 +31,7 @@ const renderApp = () => {
     hasRendered = true;
   }
 };
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 firebase.auth().onAuthStateChanged(user => {
   if (user) {
